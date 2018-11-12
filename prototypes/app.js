@@ -84,3 +84,27 @@ Array.prototype.smaller = function() {
   return smallerNumber;
 }
 
+Array.prototype.duplicate = function () {
+  let array = this;
+  let newArray = array.concat(array);
+  return newArray;
+}
+
+Array.prototype.getMedia = function () {
+  let array = this;
+  let newArray = [];
+  let media = 0;
+  array.forEach((e) => {
+    debugger
+    if (typeof e === "number") {
+      newArray.push(e)
+    }
+  });
+
+  for (let index = 0; index < newArray.length; index++) {
+    media += newArray[index];
+  }
+  
+  media = media / newArray.length;
+  return media;
+}
