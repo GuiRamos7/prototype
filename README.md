@@ -1,4 +1,4 @@
-# prototype-
+# prototype
 
 This is a exercise of prototype JavaScript.
 
